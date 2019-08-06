@@ -16,3 +16,16 @@ def states():
   MidAtlantic[1] = 'NJ'
   MidAtlantic[-1] = 'DE'
   len(MidAtlantic) = 5
+  
+  for state in MidAtlantic:
+    print(state, end=' ')    #prints the five states on same line
+
+def threesmlutiples():
+  multiples = [n*3 for n in range(10)]
+  multiples   #yields multiples of three from 3 to 27, inclusive
+  
+def dictionaryexample():
+  NAFTA['Canada'] # yields 1, 'USA':2, 'Mexico':3}
+  NAFTA['USA'] # yields 2
+  NAFTA['Mexico'] # yields 2
+  
