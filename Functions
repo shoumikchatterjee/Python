@@ -1,0 +1,18 @@
+def product(a, b, c):
+  result = a + b + c
+  return result
+  
+  
+def evenoddneither(n):
+  if (n%2 == 0):
+    print (n, "is even")
+  elif (n%2 == 1):
+    print (n, "is odd")
+  else:
+    print (n, "is neither")
+
+def states():
+  MidAtlantic = ['NY', 'NJ', 'PA', 'MD', 'DE']
+  MidAtlantic[1] = 'NJ'
+  MidAtlantic[-1] = 'DE'
+  len(MidAtlantic) = 5
