@@ -18,11 +18,11 @@ def states():
   len(MidAtlantic) = 5
   
   for state in MidAtlantic:
-    print(state, end=' ')    #prints the five states on same line
+    print(state, end=' ')    # prints the five states on same line
 
 def threesmlutiples():
   multiples = [n*3 for n in range(10)]
-  multiples   #yields multiples of three from 3 to 27, inclusive
+  multiples   # yields multiples of three from 3 to 27, inclusive
   
 def dictionaryexample():
   NAFTA{'Canada': 1, 'USA': 2, 'Mexico': 3} 
