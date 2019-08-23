@@ -1,0 +1,13 @@
+import pandas as pd
+
+a = np.array(['h', 'o', 'm', 'e'])
+b = pd.Series(a)  # has indices 0, 1, 2, and 3 correspond to h, o, m, and e, respectively
+c = pd.Series(a, index = [10, 20, 30, 40])  # has indices 10, 20, 30, and 40 correspond to h, o, m, and e, respectively
+a[1:3]  # yields 2nd amd 3rd indices and elements of a: 1  o        2   m
+c[40]  # yields the element of c corresponding to index 40:  e
+
+d = [['Montpelier', 'VT'], ['Concord', 'NH'], ['Augusta', 'ME']]
+e = pd.DataFrame(d, , index [1, 2, 3], columns = ['Capital', 'State'])  # yields dataframe with indices 1, 2, and 3 corresponding to the values in the two columns labeled Capital and State
+# DataFrame from dictionaries and column/row selection, addition, deletion
+
+# Panel
