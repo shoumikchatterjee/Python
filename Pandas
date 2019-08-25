@@ -11,5 +11,7 @@ e = pd.DataFrame(d, , index = [1, 2, 3], columns = ['Capital', 'State'])  # yiel
 f = {'Math': ['Arithmetic', Algebra', 'Geometry'], 'Science': ['Biology', 'Chemistry', 'Physics']}
 g = pd.DataFrame(f, index = [1, 2, 3])  # yields dataframe with indices 1, 2, and 3 corresponding to the values in the two columns labeled Math and Science
 g['Science']  # yields the Science column of dataframe f
-del g['Math']  # removes the Math column from dataframe
+h = g.reindex(index = [4, 5, 6], columns = ['M', 'S'])  # reindexes the indices to 4, 5, and 6 and renames the columns M and S
+del g['M']  # removes the M column from dataframe
+
 # Panel
