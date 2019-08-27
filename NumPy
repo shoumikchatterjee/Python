@@ -16,3 +16,5 @@ w = np.sort(d)  # sorts elemnts of d: [4, 7, 8]
 
 from matplotlib import pyplot as plt
 # enables 2-D plots
+# write expressions for x and y, respectively, in which expression for x is often an array of numbers (i.e. np.arange())
+# plt.title('')/xlabel('')/ylabel('')/plot(x, y)/show() methods for plot title, x and y axes labels, plot, and graphical display, respectively
