@@ -1,4 +1,7 @@
+import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 a = np.array(['h', 'o', 'm', 'e'])
 b = pd.Series(a)  # has indices 0, 1, 2, and 3 correspond to h, o, m, and e, respectively
