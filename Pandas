@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Series and DataFrames
+
 a = np.array(['h', 'o', 'm', 'e'])
 b = pd.Series(a)  # has indices 0, 1, 2, and 3 correspond to h, o, m, and e, respectively
 c = pd.Series(a, index = [10, 20, 30, 40])  # has indices 10, 20, 30, and 40 correspond to h, o, m, and e, respectively
@@ -17,4 +19,16 @@ i = pd.concat([e, g])  # combies dataframes e & g
 h = g.reindex(index = [4, 5, 6], columns = ['M', 'S'])  # reindexes the indices to 4, 5, and 6 and renames the columns M and S
 del g['M']  # removes the M column from dataframe
 
-# Panel
+
+# Plots
+
+x = [1,2,3,4]
+y = [25, 33, 29, 38]
+
+fig = plt.figure()
+axes = fig.add_axes([0.1, 0.1, 0.8, 0.5])  # positions graph
+axes.plot(x,y, color='blue', marker='*', label='Points Scored per Quarter')  # plots x and y with specified legend, color, and marker
+axes.legend(loc=0) # places legend in optimal position
+axes.set_xlabel('Quarter')
+axes.set_ylabel('Points Scored')
+axes.set_title('Basketball Scoreboard for Winning Team')
