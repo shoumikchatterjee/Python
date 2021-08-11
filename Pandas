@@ -22,7 +22,7 @@ del g['M']  # removes the M column from dataframe
 
 # Plots
 
-x = [1,2,3,4]  
+x = [1, 2, 3, 4]  
 y = [25, 33, 29, 38]
 
 fig = plt.figure()
