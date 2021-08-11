@@ -6,4 +6,4 @@ sns.barplot(x='<x-col>', y='<y-col>', dataframe)  # shows barplot of x and y col
 sns.heatmap(dataframe.corr(), annot=True, cmap='coolwarm')  # shows heatmap of dataframe with numerical values labeled in each cell
 a_grid=sns.FacetGrid(data=dataframe, col='y-col', row='x-row')  # generates a grid
 a_grid.map(plt.hist())  # generates histogram on grid background
-sns.lmplot(x='<x-col>', y='<y-col>', data=dataframe, markers='<>', aspect=0.5, size=10)  # generates line plot of x and y columns with given markings and size
+sns.lmplot(x='<x-col>', y='<y-col>', data=dataframe, markers='<>', aspect=0.5, size=15)  # generates line plot of x and y columns with given markings and size
