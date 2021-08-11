@@ -18,7 +18,7 @@ def states():
   len(MidAtlantic) = 5
   
   for state in MidAtlantic:
-    print(state, end=' ')    # prints the five states on same line
+    print(state, end='  ')    # prints the five states on same line
 
 def threesmlutiples():
   multiples = [n*3 for n in range(10)]
