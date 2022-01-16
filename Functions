@@ -20,7 +20,7 @@ def states():
   for state in MidAtlantic:
     print(state, end='  ')    # prints the five states on same line
 
-def threesmlutiples():
+def threesmultiples():
   multiples = [n*3 for n in range(10)]
   multiples   # yields multiples of three from 3 to 27, inclusive
   
