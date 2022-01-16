@@ -12,7 +12,7 @@ s = np.array([3.40, 9.12, 2.751])
 t = np.around(s, decimals = 1)  # rounds elements of s to 1 decimal place: [3.4, 9.1, 2.8]
 u = np.median(s)  # yields median value of elements in s: 3.40
 v = np.mean(t)  # yields mean value of elements of t: 5.1
-w = np.sort(d)  # sorts elemnts of d: [4, 7, 8]
+w = np.sort(d)  # sorts elements of d: [4, 7, 8]
 
 from matplotlib import pyplot as plt
 x = np.arange(0, 11, 1)
