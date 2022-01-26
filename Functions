@@ -30,3 +30,18 @@ def dictionaryexample():
   NAFTA['USA'] # yields 2
   NAFTA['Mexico'] # yields 3
   
+def median(intlist):
+    if len(intlist) == 0:
+         return None
+    else:
+        sortlist = sorted(intlist)
+        if (len(intlist) % 2) == 1:   #tests to see is list is odd
+            index = int((len(intlist)-1)/2) # finds middle number
+            return sortlist[index] 
+        else:
+            index1 = int((len(intlist)/2)-1) # finds smaller of two middle numbers
+            result1 = sortlist[index1] 
+            index2 = int((len(intlist)/2)) # finds larger of two middle numbers
+            result2 = sortlist[index2]
+            result = (result1 + result2)/2  # determines average of two middle numbers
+            return result 
