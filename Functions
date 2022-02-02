@@ -45,3 +45,15 @@ def median(intlist):
             result2 = sortlist[index2]
             result = (result1 + result2)/2  # determines average of two middle numbers
             return result 
+
+def estimate_pi_python(numsamples):
+    i = 0
+    numincircle = 0
+    while (i < numsamples):    
+        x = random.random() - 0.5
+        y = random.random() - 0.5
+        if (math.sqrt(x**2 + y**2) <= 0.5):
+            numincircle += 1
+        i += 1      
+    pi = float(numincircle/numsamples) * 4
+    return pi
