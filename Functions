@@ -25,7 +25,7 @@ def threesmultiples():
   multiples   # yields multiples of three from 3 to 27, inclusive
   
 def dictionaryexample():
-  NAFTA{1 :'Canada', 2 : 'USA', 3 : 'Mexico'} 
+  NAFTA = {1 :'Canada', 2 : 'USA', 3 : 'Mexico'} 
   NAFTA['1'] # yields Canada
   NAFTA['2'] # yields USA 
   NAFTA['3'] # yields Mexico
